@@ -26,9 +26,9 @@ const UserList = () => {
   return (
     <div>
       <h1>User List</h1>
-      <ul>
+      <ul className='many_users'>
         {listOfUser.map(user => (
-          <li key={user.id}>
+          <li key={user.id} className='on_user'>
             <h3>{user.name}</h3>
             <p>Email: {user.email}</p>
             <p>City: {user.address.city}</p>
